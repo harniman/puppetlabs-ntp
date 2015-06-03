@@ -1,6 +1,6 @@
 #
 class ntp::config inherits ntp {
-^^^
+#^^^
   if $ntp::keys_enable {
     $directory = ntp_dirname($ntp::keys_file)
     file { $directory:
